@@ -1,1 +1,1 @@
-java encoding MS949(EUC-KR)
+java encoding UTF-8
