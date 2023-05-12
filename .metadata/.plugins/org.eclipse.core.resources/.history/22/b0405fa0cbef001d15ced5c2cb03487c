@@ -1,0 +1,10 @@
+package aop002;
+
+public class Boy {
+	public void runSomething() {
+		System.out.println("열쇠로 문을 열고 집에 들어간다.");
+	
+
+			System.out.println("컴퓨터로 게임을 한다.");
+	}
+}

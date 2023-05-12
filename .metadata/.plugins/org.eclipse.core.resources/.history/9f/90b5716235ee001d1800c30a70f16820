@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 여기부터 작성 -->
+
+<bean id="koreaTire" class="expert003.KoreaTire"></bean>
+
+<bean id="americaTire" class="expert003.AmericaTire">
+</bean>
+
+<bean id="car" class="expert003.Car">
+	<property name="tire1" ref="americaTire"></property>
+			<!-- name=""속의 이름은 xml규칙에 따라 실제 프로퍼티 이름을 사용해야 한다고 한다. 실제 프로퍼티 이름이란 
+			getter, setter 메소드의 get, set을 뺀 이름이다. (Car.java 파일에서 메소드 이름을 따라 변경하니 에러가 사라졌다.)-->
+</bean>
+
+</beans>
+
+

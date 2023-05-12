@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 여기부터 작성 -->
+
+<bean id="koreaTire" class="expert003.KoreaTire"></bean>
+
+<bean id="americaTire" class="expert003.AmericaTire">
+</bean>
+
+<bean id="car" class="expert003.Car">
+	<property name="tire" ref="americaTire"></property>
+			<!-- name=""속의 이름은 xml규칙에 따라 실제 프로퍼티 이름을 사용해야 한다고 한다. 실제 프로퍼티 이름이란 
+			setter 메소드의 get, set을 뺀 이름이다. (Car.java 파일에서 메소드 이름을 따라 변경하니 에러가 사라졌다.)-->
+			<!-- property 속성의 name 부분이 getter/setter와 연결되어 있고, 자동으로 객체를 생성하도록 하는 기능을 하는 것 같다. -->
+			<!-- 결국 expert002의 Driver에 있는 car.setTire(tire)를 property 속성으로 대신 적용한 것이다. -->
+</bean>
+
+</beans>
+
+

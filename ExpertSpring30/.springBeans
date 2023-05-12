@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.18.202109140629-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[true]]></enableImports>
+	<configs>
+		<config>src/main/java/expert002/expert002.xml</config>
+		<config>src/main/java/expert003/expert003.xml</config>
+		<config>src/main/java/expert004/expert004.xml</config>
+		<config>src/main/java/expert005/expert005.xml</config>
+		<config>src/main/java/aop002/aop002.xml</config>
+		<config>src/main/java/aop003/aop003.xml</config>
+		<config>src/main/java/aop004/aop004.xml</config>
+		<config>src/main/java/aop005/aop005.xml</config>
+	</configs>
+	<autoconfigs>
+		<config>src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</config>
+		<config>src/main/webapp/WEB-INF/spring/root-context.xml</config>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

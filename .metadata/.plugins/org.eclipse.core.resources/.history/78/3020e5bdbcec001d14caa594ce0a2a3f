@@ -1,0 +1,27 @@
+package expert002;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("expert002/expert002.xml");
+		//이게 컨테이너를 만드는 문장임. 서버 없이 오프라인으로 하는 예제이기 때문에 필요한 거고, 톰캣을 사용하면 WAS에서 뭐 자동으로 컨테이너를
+		//만들어서 ~~ 자동으로 된다고 한다. 그니까 서버를 사용할 때는 필요없는 문장임. 이 문장이 실질적으로 bean 객체를 만들어내는 문장임.
+		
+		Car car = context.getBean("car", Car.class);
+		
+//		Tire tire = new KoreaTire();
+//		Tire tire = (Tire)context.getBean("tire");
+		Tire tire = context.getBean("tire", Tire.class);  
+		//tire타입으로 객체를 만든다는 뜻. 위예 캐쓰팅 햬써 쓴 것과 같은 몌서드인뎨 컈스팅 하는 기능이 포함되어 있는 먜꺠변수 2걔짜리 메서드임.
+		
+		
+		
+		car.setTire(tire);
+		
+		System.out.println(car.getTireBrand());
+	}
+
+}

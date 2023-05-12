@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="expert001_03.Car"/>
+    <fullyQualifiedTypeName name="expert001_01.Tire"/>
+    <fullyQualifiedTypeName name="expert001_01.AmericaTire"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+</qualifiedTypeNameHistroy>

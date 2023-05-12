@@ -1,0 +1,18 @@
+package aop005;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+
+@Aspect
+public class MyAspect {
+	@Before("execution(* runSomething())")
+	public void before(JoinPoint joinPoint) {
+		System.out.println("얼굴 인식 확인 : 문을 열어라.");
+	}
+	@After("execution(* runSomething())")
+	public void lockDoor(JoinPoint joinPoint) {
+		System.out.println("외출 확인 : 문 잠가라.");
+	}
+}

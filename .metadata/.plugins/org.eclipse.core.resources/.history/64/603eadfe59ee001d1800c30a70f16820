@@ -1,0 +1,10 @@
+package expert005;
+
+public class Car {
+	@Resource
+	Tire tire;
+	
+	public String getTireBrand() {
+		return "장착된 타이어 : " + tire.getBrand();
+	}
+}

@@ -1,0 +1,16 @@
+package expert003;
+
+public class Car {
+	Tire tire;
+	public Tire getTire() {
+		return tire;
+	}
+	public void setTire1(Tire tire) {  //expert003.xml의 <property name="" 여기에 들어가는 이름이 setter 메소드의
+										// set을 제외한 이름과 일치해야 한다.
+		this.tire = tire;
+	}
+	
+	public String getTireBrand() {
+		return "장착된 타이어 : " + tire.getBrand();
+	}
+}
